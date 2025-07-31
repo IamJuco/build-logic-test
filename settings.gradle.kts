@@ -1,4 +1,5 @@
 pluginManagement {
+//    includeBuild(":build-logic")
     repositories {
         google {
             content {
@@ -21,3 +22,11 @@ dependencyResolutionManagement {
 
 rootProject.name = "BuildLogicTest"
 include(":app")
+
+include(":designsystem")
+
+include(":data")
+include(":domain")
+
+include(":feature:main")
+include(":feature:home")
