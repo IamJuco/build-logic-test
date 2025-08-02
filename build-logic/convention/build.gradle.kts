@@ -30,6 +30,11 @@ gradlePlugin {
             id = "multi.module.android.presentation.ui"
             implementationClass = "AndroidPresentationUIConventionPlugin"
         }
+
+        register("jvmLibrary") {
+            id = "multi.module.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }
 
