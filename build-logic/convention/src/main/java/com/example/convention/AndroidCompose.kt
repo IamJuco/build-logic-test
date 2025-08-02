@@ -13,8 +13,8 @@ internal fun Project.configureAndroidCompose(
         }
 
         composeOptions {
-            // 코틀린 2.0 부터는 명시를 하지 않아도됌
-//            kotlinCompilerExtensionVersion = libs.findVersion("composeCompiler").get().toString()
+//            // 코틀린 2.0 부터는 명시를 하지 않아도됌
+//            kotlinCompilerExtensionVersion = libs.findVersion("kotlin.compose").get().toString()
         }
 
         dependencies {
