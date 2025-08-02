@@ -4,6 +4,15 @@ plugins {
 
 group = "com.example.buildlogic"
 
+gradlePlugin {
+    plugins {
+        register("androidApplication") {
+            id = "multi.module.android.application"
+            implementationClass = "AndroidApplicationConventionPlugin"
+        }
+    }
+}
+
 kotlin {
     compilerOptions {
         jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11

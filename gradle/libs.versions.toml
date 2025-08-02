@@ -1,4 +1,13 @@
 [versions]
+applicationId = "com.example.buildlogictest"
+versionName = "1.0"
+versionCode = "1"
+minSdk = "24"
+targetSdk = "36"
+compileSdk = "36"
+
+desugar_jdk_libs = "2.0.4"
+
 agp = "8.7.2"
 kotlin = "2.0.21"
 coreKtx = "1.10.1"
@@ -34,6 +43,8 @@ agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 compose-compiler-extension = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
 kotlin-gradleplugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 
+desugar-jdk-libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar_jdk_libs" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
@@ -41,3 +52,4 @@ kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ko
 android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 
+multi-module-android-application = { id = "multi.module.android.application", version = "unspecified"}
