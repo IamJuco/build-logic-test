@@ -5,7 +5,7 @@ import com.example.convention.configureKotlinAndroid
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
-
+/** Compose가 없는 Android Library용 XML기반 또는 data 모듈등*/
 class AndroidLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         target.run {
@@ -24,7 +24,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
 
                 defaultConfig {
                     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-//                    consumerProguardFiles("consumer-rules.pro")
+                    consumerProguardFiles("consumer-rules.pro")
                 }
             }
 
